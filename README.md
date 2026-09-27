@@ -1,4 +1,4 @@
-# CB-Auth 🔐📱
+# CB-Auth
 
 **Continuous Behavioral Authentication & Active Device Enforcement for Android**
 
@@ -8,17 +8,17 @@ If a behavioral anomaly or unauthorized usage is detected, the application enfor
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- 👆 **High-Precision Touch Dynamics Logging**: Captures fine-grained `MotionEvent` data (`ACTION_DOWN`, `ACTION_MOVE`, `ACTION_UP`), recording:
+- **High-Precision Touch Dynamics Logging**: Captures fine-grained `MotionEvent` data (`ACTION_DOWN`, `ACTION_MOVE`, `ACTION_UP`), recording:
   - $(x, y)$ Screen Coordinates
   - Finger Pressure (`MotionEvent.getPressure()`)
   - Touch Contact Area Proxy (`MotionEvent.getSize()`)
   - Timestamp in milliseconds
   - Multi-touch Pointer ID & Session UUID
-- 💾 **CSV Dataset Exporter**: Automatically buffers and exports recorded touch interactions into session-specific CSV datasets (`session_<id>.csv`) in app-private storage for machine learning analysis.
-- 🔒 **Active Security Enforcement**: Integrates Android `DeviceAdminReceiver` and `DevicePolicyManager` to programmatically lock the phone screen (`lockNow()`) upon detecting security anomalies or behavioral drift.
-- 🎯 **Interactive Data Capture Harness**: Includes a dedicated testing activity with free-form typing fields and tap grids to collect diverse behavioral touch patterns.
+- **CSV Dataset Exporter**: Automatically buffers and exports recorded touch interactions into session-specific CSV datasets (`session_<id>.csv`) in app-private storage for machine learning analysis.
+- **Active Security Enforcement**: Integrates Android `DeviceAdminReceiver` and `DevicePolicyManager` to programmatically lock the phone screen (`lockNow()`) upon detecting security anomalies or behavioral drift.
+- **Interactive Data Capture Harness**: Includes a dedicated testing activity with free-form typing fields and tap grids to collect diverse behavioral touch patterns.
 
 ---
 
@@ -35,7 +35,7 @@ com.example.behaviouralauth
 
 ---
 
-## 📊 CSV Dataset Schema
+## CSV Dataset Schema
 
 The generated session CSV files (`session_<id>.csv`) follow this schema:
 
@@ -52,7 +52,7 @@ The generated session CSV files (`session_<id>.csv`) follow this schema:
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -78,7 +78,7 @@ The generated session CSV files (`session_<id>.csv`) follow this schema:
 
 ---
 
-## 📱 How to Use
+## How to Use
 
 1. **Request Device Admin Permissions**:
    - Open the app and tap **"Request Device Admin"**.
@@ -96,7 +96,7 @@ The generated session CSV files (`session_<id>.csv`) follow this schema:
 
 ---
 
-## 🛠️ Tech Stack & Dependencies
+## Tech Stack & Dependencies
 
 * **Language**: [Kotlin](https://kotlinlang.org/)
 * **UI Toolkit**: AndroidX AppCompat, Material Design Components, ConstraintLayout
@@ -107,6 +107,6 @@ The generated session CSV files (`session_<id>.csv`) follow this schema:
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and available under the [MIT License](LICENSE).
